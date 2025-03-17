@@ -1,2 +1,81 @@
-17-03-2025 12:40:45  309  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+17-03-2025 12:40:45  309  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(1)" >> ./my_command_history.txt'
 17-03-2025 12:40:51  310  git add .
+17-03-2025 12:41:10  311  git commit -am"add my_command_history"
+17-03-2025 12:41:17  312  git push
+17-03-2025 12:44:14  314  docker ps
+17-03-2025 12:44:50  315  docker ps -a
+17-03-2025 12:46:16  316  docker --name postgreSQL postgres
+17-03-2025 12:47:25  317  docker run postgres
+17-03-2025 12:47:39  319  docker run hello-world
+17-03-2025 12:48:00  322  docker ps
+17-03-2025 12:48:05  323  docker ps -a
+17-03-2025 12:56:34  309  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+17-03-2025 12:56:42  310  ls
+17-03-2025 12:57:07  327  docker pull mysql
+17-03-2025 12:57:13  328  docker ps
+17-03-2025 12:57:19  329  docker ps -a
+17-03-2025 12:57:30  330  docker ps -a
+17-03-2025 12:57:37  331  docker ps -a
+17-03-2025 12:58:12  332  docker stop hello-world
+17-03-2025 12:58:24  333  docker stop 884659c6722f
+17-03-2025 12:58:32  334  docker ps -a
+17-03-2025 13:01:07  335  docker run hello-world
+17-03-2025 13:01:27  336  docker stop sha256:74cc54e27dc41bb10dc4b2226072d469509f2f22f1a3ce74f4a59661a1d44602
+17-03-2025 13:01:54  337  docker stop 74cc54e27dc41bb10dc4b2226072d469509f2f22f1a3ce74f4a59661a1d44602
+17-03-2025 13:02:11  338  docker ps
+17-03-2025 13:02:14  339  docker ps -a
+17-03-2025 13:02:26  340  docker stop 685d578e601d
+17-03-2025 13:02:34  341  docker ps -a
+17-03-2025 13:06:17  342  ls
+17-03-2025 13:07:10  309  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+17-03-2025 13:07:10  309  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+17-03-2025 13:07:25  310  ls
+17-03-2025 13:13:04  311  docker run -d -e MYSQL_ROOT_PASSWORD=secret mysql
+17-03-2025 13:13:20  312  docker ps
+17-03-2025 13:19:40  313  docker run -d -e POSTGRES_PASSWORD=123456 postgres
+17-03-2025 13:19:43  314  docker ps
+17-03-2025 13:20:12  315  docker ps -a
+17-03-2025 13:21:04  316  clear
+17-03-2025 13:21:41  317  docker ps
+17-03-2025 13:21:54  318  docker stop 53a857dc2d68
+17-03-2025 13:22:17  319  docker ps
+17-03-2025 13:22:24  320  docker ps -a
+17-03-2025 13:24:06  321  docker run -d -e POSTGRES_PASSWORD=123456 --name postgreSQL postgres
+17-03-2025 13:24:09  322  docker ps -a
+17-03-2025 13:24:37  323  docker stop 0a28940a5951
+17-03-2025 13:24:44  324  docker ps -a
+17-03-2025 13:25:08  325  docker ps -a
+17-03-2025 13:26:58  326  docker rm hello-world
+17-03-2025 13:27:07  327  docker ps -a
+17-03-2025 13:27:13  328  docker rmi hello-world
+17-03-2025 13:27:24  329  docker rm hello-world
+17-03-2025 13:27:53  330  docker images
+17-03-2025 13:28:13  331  docker run hello-world
+17-03-2025 13:28:34  332  docker rmi hello-world
+17-03-2025 13:28:50  333  docker rmi 07eded4e2930
+17-03-2025 13:29:05  334  docker rmi 74cc54e27dc4
+17-03-2025 13:29:11  335  docker rm 74cc54e27dc4
+17-03-2025 13:29:20  336  docker rmi -f hello-world
+17-03-2025 13:29:26  337  docker ps -a
+17-03-2025 13:32:24  338  clear
+17-03-2025 13:32:27  339  docker ps
+17-03-2025 13:32:44  340  docker ps -a
+17-03-2025 13:34:10  341  docker rm 53a857dc2d68
+17-03-2025 13:34:29  342  docker images
+17-03-2025 13:34:42  343  docker rmi mysql
+17-03-2025 13:34:59  344  docker ps
+17-03-2025 13:37:34  345  docker pull mysql
+17-03-2025 13:37:44  309  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+17-03-2025 13:38:11  310  docker pull mysql
+17-03-2025 13:38:54  346  docker pull mysql
+17-03-2025 13:44:08  311  docker pull mysql
+17-03-2025 13:51:44  312  docker pull mysql
+17-03-2025 13:52:17  313  ls
+17-03-2025 13:52:28  314  docker ps
+17-03-2025 13:52:31  315  docker ps -a
+17-03-2025 13:54:08  316  docker run -d -e MYSQL_ROOT_PASSWORD=123456 --name mysql-latest mysql
+17-03-2025 21:03:25  309  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+17-03-2025 21:03:25  309  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+17-03-2025 21:03:26  309  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+17-03-2025 21:03:46  310  ls
+17-03-2025 21:04:26  312  git add .
