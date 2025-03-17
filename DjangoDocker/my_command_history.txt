@@ -1,0 +1,7 @@
+17-03-2025 23:04:55  324  cd DjangoDocker/
+17-03-2025 23:04:57  325  ls
+17-03-2025 23:05:35  326  python manage.py runserver
+17-03-2025 23:06:23  327  pip install dj-database-url
+17-03-2025 23:06:33  328  ls
+17-03-2025 23:06:47  329  pip install requirements.txt 
+18-03-2025 00:03:10  330  git add .

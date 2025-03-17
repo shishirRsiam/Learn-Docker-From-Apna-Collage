@@ -79,3 +79,16 @@
 17-03-2025 21:03:26  309  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
 17-03-2025 21:03:46  310  ls
 17-03-2025 21:04:26  312  git add .
+17-03-2025 21:04:53  313  git commit -am"update command history"
+17-03-2025 21:05:04  314  git push
+17-03-2025 21:06:17  315  django-admin startproject DjangoDocker
+17-03-2025 21:07:44  316  docker --version
+17-03-2025 21:08:00  317  docker ps
+17-03-2025 21:11:25  318  docker ps
+17-03-2025 21:11:29  319  docker --version
+17-03-2025 21:12:37  309  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+17-03-2025 21:12:42  320  pip freeze > requirements.txt
+17-03-2025 21:12:49  321  pip freeze > requirements.txt
+17-03-2025 21:13:08  322  pip freeze > requirements.txt
+17-03-2025 23:04:47  323  ls
+17-03-2025 23:05:47  336  ssh -i "C:\Users\SISHI\Downloads\Django Start.pem" ubuntu@51.20.127.171
