@@ -44,6 +44,26 @@ This will pull and run the `hello-world` container, confirming Docker is working
 
 ---
 
+
+## 🐳 Basic Docker Commands  
+
+| Command | Description |
+|---------|-------------|
+| `docker --version` | Check installed Docker version |
+| `docker pull <image>` | Download a Docker image from Docker Hub |
+| `docker images` | List all downloaded images |
+| `docker run <image>` | Run a container from an image |
+| `docker ps` | Show running containers |
+| `docker ps -a` | Show all containers (running & stopped) |
+| `docker stop <container_id>` | Stop a running container |
+| `docker rm <container_id>` | Remove a container |
+| `docker rmi <image_id>` | Remove an image |
+| `docker logs <container_id>` | View container logs |
+
+---
+
+
+
 ## 📝 Writing a Dockerfile for Django  
 
 A **Dockerfile** is a script that contains instructions to create a Docker image.  
@@ -131,23 +151,6 @@ docker-compose up -d
 ```
 - `-d` → Runs in **detached mode**  
 - The **Django app** will connect to the PostgreSQL database inside a container.  
-
----
-
-## 🐳 Basic Docker Commands  
-
-| Command | Description |
-|---------|-------------|
-| `docker --version` | Check installed Docker version |
-| `docker pull <image>` | Download a Docker image from Docker Hub |
-| `docker images` | List all downloaded images |
-| `docker run <image>` | Run a container from an image |
-| `docker ps` | Show running containers |
-| `docker ps -a` | Show all containers (running & stopped) |
-| `docker stop <container_id>` | Stop a running container |
-| `docker rm <container_id>` | Remove a container |
-| `docker rmi <image_id>` | Remove an image |
-| `docker logs <container_id>` | View container logs |
 
 ---
 
