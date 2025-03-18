@@ -5,3 +5,5 @@
 17-03-2025 23:06:33  328  ls
 17-03-2025 23:06:47  329  pip install requirements.txt 
 18-03-2025 00:03:10  330  git add .
+18-03-2025 00:03:54  331  git commit -am"add some img and add DjangoDocker project"
+18-03-2025 00:04:01  332  git push

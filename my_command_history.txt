@@ -92,3 +92,10 @@
 17-03-2025 21:13:08  322  pip freeze > requirements.txt
 17-03-2025 23:04:47  323  ls
 17-03-2025 23:05:47  336  ssh -i "C:\Users\SISHI\Downloads\Django Start.pem" ubuntu@51.20.127.171
+18-03-2025 11:30:38  336  ssh -i "C:\Users\SISHI\Downloads\Django Start.pem" ubuntu@51.20.127.171
+18-03-2025 11:30:38  336  ssh -i "C:\Users\SISHI\Downloads\Django Start.pem" ubuntu@51.20.127.171
+18-03-2025 19:12:45  336  ssh -i "C:\Users\SISHI\Downloads\Django Start.pem" ubuntu@51.20.127.171
+18-03-2025 19:12:45  336  ssh -i "C:\Users\SISHI\Downloads\Django Start.pem" ubuntu@51.20.127.171
+18-03-2025 19:13:44  336  ssh -i "C:\Users\SISHI\Downloads\Django Start.pem" ubuntu@51.20.127.171
+18-03-2025 19:13:53  337  git status
+18-03-2025 19:40:13  338  git add .
