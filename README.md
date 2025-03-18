@@ -1,3 +1,5 @@
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=shishirrsiam&label=Profile%20views&color=0e75b6&style=flat" alt="shishirrsiam" /> </p>
+
 # Learn Docker From Apna College 🚢  
 
 Welcome to the **Learn Docker From Apna College** repository! This repository contains notes, code snippets, and hands-on exercises to help you learn **Docker** from scratch, focusing on deploying a **Django application** inside a Docker container.  
@@ -15,23 +17,6 @@ Docker is an **open-source platform** that allows developers to **build, ship, a
 ✅ **Fast Deployment** – Quickly start, stop, and scale applications  
 ✅ **Consistency** – Ensures the same environment for development, testing, and production  
 ✅ **Microservices-Friendly** – Works well with modern architectures  
-
----
-
-## 📂 Folder Structure  
-```
-/  
-├── django_project/       # Django project folder  
-│   ├── manage.py  
-│   ├── django_app/       # Django app  
-│   ├── settings.py       # Django settings  
-│   ├── urls.py           # URL configurations  
-│   └── views.py          # Views  
-├── Dockerfile            # Dockerfile for Django  
-├── docker-compose.yml    # Docker Compose file  
-├── requirements.txt      # Python dependencies  
-└── README.md             # This documentation  
-```  
 
 ---
 

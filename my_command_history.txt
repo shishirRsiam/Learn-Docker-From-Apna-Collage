@@ -101,3 +101,5 @@
 18-03-2025 19:40:13  338  git add .
 18-03-2025 19:41:09  339  git commit -am"video watch completed. next work: use Docker in Django Application"
 18-03-2025 19:41:51  340  git push
+18-03-2025 19:51:53  342  git commit -am"update readme files"
+18-03-2025 19:52:00  343  git push
