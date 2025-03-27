@@ -7,3 +7,11 @@
 18-03-2025 00:03:10  330  git add .
 18-03-2025 00:03:54  331  git commit -am"add some img and add DjangoDocker project"
 18-03-2025 00:04:01  332  git push
+27-03-2025 21:29:42  339  cd DjangoDocker/
+27-03-2025 21:29:44  340  ls
+27-03-2025 21:30:23  341  python manage.py runserver
+27-03-2025 21:30:37  342  python manage.py makemigrations
+27-03-2025 21:30:49  343  python manage.py migrate
+27-03-2025 21:31:19  344  pip install rest_framework
+27-03-2025 21:31:54  345  pip install djangorestframework
+27-03-2025 21:36:37  346  python manage.py migrate

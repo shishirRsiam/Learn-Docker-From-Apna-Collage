@@ -106,3 +106,10 @@
 18-03-2025 20:25:12  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
 18-03-2025 20:32:44  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
 18-03-2025 20:45:21  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+18-03-2025 20:45:59  339  git commit -am"update command text file"
+18-03-2025 20:46:06  340  git push
+27-03-2025 21:29:04  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+27-03-2025 21:29:24  338  clear
+27-03-2025 21:30:17  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+27-03-2025 21:43:19  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+27-03-2025 21:43:22  338  git add .
