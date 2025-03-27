@@ -15,3 +15,48 @@
 27-03-2025 21:31:19  344  pip install rest_framework
 27-03-2025 21:31:54  345  pip install djangorestframework
 27-03-2025 21:36:37  346  python manage.py migrate
+27-03-2025 21:50:14  341  cd DjangoDocker/
+27-03-2025 21:51:21  342  docker -v
+27-03-2025 21:51:31  343  docker ps
+27-03-2025 21:51:36  344  docker ps -a
+27-03-2025 22:01:37  345  docker build -t my_django_app .
+27-03-2025 22:02:58  346  docker ps
+27-03-2025 22:03:01  347  docker ps -a
+27-03-2025 22:03:51  348  docker run -d -p 8000:8000 --name my_django_app_container my_django_app
+27-03-2025 22:04:01  349  docker ps
+27-03-2025 22:04:18  350  echo "gunicorn" >> requirements.txt
+27-03-2025 22:05:06  351  docker run -d -p 8000:8000 --name my_django_app_container my_django_app
+27-03-2025 22:09:10  338  cd DjangoDocker/
+27-03-2025 22:09:16  339  docker -v
+27-03-2025 22:10:17  340  docker ps
+27-03-2025 22:11:25  341  docker ps -a
+27-03-2025 22:11:28  342  docker ps -a
+27-03-2025 22:14:30  343  docker run -it --entrypoint /bin/bash my_django_app
+27-03-2025 22:15:14  344  docker images
+27-03-2025 22:15:43  345  docker build -t DjangoTestApp .
+27-03-2025 22:15:46  346  docker build -t DjangoTestApp .
+27-03-2025 22:15:57  347  docker build -t Django-test-app .
+27-03-2025 22:17:02  348  docker build -t django-test-app .
+27-03-2025 22:17:44  349  docker images
+27-03-2025 22:18:08  350  docker run -it --entrypoint /bin/bash django-test-app
+27-03-2025 22:19:29  351  docker run -it django-test-app /bin/sh
+27-03-2025 22:19:39  352  docker run -it django-test-app /bin/bash
+27-03-2025 22:19:57  353  RUN apt-get update && apt-get install -y bash
+27-03-2025 22:19:58  354  RUN apt-get update && apt-get install -y bash
+27-03-2025 22:20:40  355  docker run -it django-test-app
+27-03-2025 22:21:34  356  docker run -it django-test-app
+27-03-2025 22:21:58  357  docker run -d django-test-app
+27-03-2025 22:22:27  358  docker exec -it feefdbe2f3ced7648260cfc3f7a2520c048c8004e5222769e5e66fa3e0e24fb8 /bin/bash
+27-03-2025 22:23:33  359  pip freeze > requirements.txt
+27-03-2025 22:24:13  360  python -m venv .env
+27-03-2025 22:24:39  361  source .env/Scripts/activate
+27-03-2025 22:24:42  362  ls
+27-03-2025 22:24:49  363  python manage.py runserver
+27-03-2025 22:24:52  363  python manage.py runserver
+27-03-2025 22:25:44  364  pip install django
+27-03-2025 22:26:13  365  pip install djangorestfreamwork
+27-03-2025 22:26:33  366  python manage.py runserver
+27-03-2025 22:26:56  367  pip install djangorestframework
+27-03-2025 22:28:00  368  python manage.py runserver
+27-03-2025 22:28:07  369  git commit git add .
+27-03-2025 22:28:18  370  gita commit -am"Djago App setup done"

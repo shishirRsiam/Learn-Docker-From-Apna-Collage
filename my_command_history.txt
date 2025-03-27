@@ -113,3 +113,9 @@
 27-03-2025 21:30:17  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
 27-03-2025 21:43:19  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
 27-03-2025 21:43:22  338  git add .
+27-03-2025 21:43:43  339  git commit -am"Django Application Rest FreamWork Setup done"
+27-03-2025 21:43:51  340  git push
+27-03-2025 22:09:07  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+27-03-2025 22:16:23  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+27-03-2025 22:16:39  338  pip install gunicorn
+27-03-2025 22:23:37  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
