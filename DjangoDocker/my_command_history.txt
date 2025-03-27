@@ -60,3 +60,8 @@
 27-03-2025 22:28:00  368  python manage.py runserver
 27-03-2025 22:28:07  369  git commit git add .
 27-03-2025 22:28:18  370  gita commit -am"Djago App setup done"
+27-03-2025 22:28:24  371  git commit -am"Djago App setup done"
+27-03-2025 22:28:31  372  git push
+27-03-2025 22:28:51  372  git push
+27-03-2025 22:29:16  373  python manage.py runserver
+27-03-2025 22:29:18  374  pip freeze > requirements.txt
