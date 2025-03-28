@@ -65,3 +65,32 @@
 27-03-2025 22:28:51  372  git push
 27-03-2025 22:29:16  373  python manage.py runserver
 27-03-2025 22:29:18  374  pip freeze > requirements.txt
+27-03-2025 22:34:15  375  docker build -t django-test-app .
+27-03-2025 22:37:53  376  docker build -t django-test-app .
+27-03-2025 22:40:56  377  docker run -p 8000:8000 django-test-app
+27-03-2025 22:41:47  378  docker run -p 8000:8000 --name DjangoDocker django-test-app
+27-03-2025 22:41:54  379  docker run -p 8090:8000 --name DjangoDocker django-test-app
+27-03-2025 22:42:06  380  docker run -p 8000:8080 --name DjangoDocker django-test-app
+27-03-2025 22:42:14  381  docker run -p 8080:8080 --name DjangoDocker django-test-app
+27-03-2025 22:43:09  382  docker run -p 8000:8080 django-test-app
+27-03-2025 22:44:04  383  docker run -p 8080:8000 django-test-app
+27-03-2025 22:45:43  384  docker save -o my_django_docker_app_v1.1.tar shishirrsiam/my_django_docker_app:v1.1
+27-03-2025 22:46:41  385  docker build -t shishirrsiam/my_django_docker_app:v1.1 .
+27-03-2025 22:47:38  386  docker image
+27-03-2025 22:47:40  387  docker images
+27-03-2025 22:47:57  388  docker save -o my_django_docker_app_v1.1.tar shishirrsiam/my_django_docker_app:v1.1
+27-03-2025 22:48:44  389  docker run shishirrsiam/my_django_docker_app:v1.1 -p 8000/8000
+27-03-2025 22:49:48  390  docker run -p 8000:8000 shishirrsiam/my_django_docker_app:v1.1
+27-03-2025 22:50:21  391  docker ps -a
+27-03-2025 22:51:16  392  docker load -i my_django_docker_app_v1.1.tar
+27-03-2025 22:51:53  393  docker images
+27-03-2025 23:15:36  394  docker run -p 8000:8000 0d4f5cc215ad
+28-03-2025 10:41:30  338  cd DjangoDocker/
+28-03-2025 10:41:49  339  python manage.py runserver
+28-03-2025 10:42:11  340  python manage.py runserver 8900
+28-03-2025 10:42:41  341  django-admin createapp TestApp
+28-03-2025 10:42:57  342  django-admin startapp TestApp
+28-03-2025 10:44:02  343  python manage.py runserver 8900
+28-03-2025 10:44:08  344  git add .
+28-03-2025 10:44:49  345  git commit -am"Setup new TestApp for testing Django + Docker + PostgrSQL Databse"
+28-03-2025 10:54:02  346  git push

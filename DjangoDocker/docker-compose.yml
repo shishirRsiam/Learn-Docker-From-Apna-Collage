@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  # Django app service
+  django:
+    build:
+      context: .  # Ensure this points to the root of your project
+      dockerfile: Dockerfile  # Ensure you have a Dockerfile for your Django app
+    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/app  # Bind mount the current directory into the container
+    ports:
+      - "8000:8000"  # Expose port 8000 for Django
+    depends_on:
+      - db  # Depends on the PostgreSQL database
+      
+  # PostgreSQL database
+  db:
+    image: postgres:latest
+    container_name: DjangoDocker_db_container
+    environment:
+      POSTGRES_DB: DjangoDocker_DB
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456  # Set your PostgreSQL password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Persistent volume for PostgreSQL data
+    ports:
+      - "5432:5432"  # Expose PostgreSQL port
+    networks:
+      - DjangoDocker_network  # Use custom network for service communication
+
+  # pgAdmin for Database Management
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_container
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"  # Expose pgAdmin UI on port 5050
+    depends_on:
+      - db  # Make sure pgAdmin depends on the PostgreSQL database
+
+volumes:
+  postgres_data:  # Volume to persist PostgreSQL data
+
+networks:
+  DjangoDocker_network:
+    driver: bridge  # Use a bridge network for communication between services
