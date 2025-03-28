@@ -1,13 +1,17 @@
-FROM python:3.11-slim
+FROM python:3.9
 
+# Set the working directory
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y bash
+# Install dependencies
+COPY requirements.txt /app/
+RUN pip install -r requirements.txt
 
-COPY requirements.txt .
+# Copy the project files into the container
+COPY . /app/
 
-RUN pip install --no-cache-dir -r requirements.txt
+# Expose the port that Django will run on
+EXPOSE 8000
 
-COPY . .
-
+# Command to run the Django app
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

@@ -94,3 +94,66 @@
 28-03-2025 10:44:08  344  git add .
 28-03-2025 10:44:49  345  git commit -am"Setup new TestApp for testing Django + Docker + PostgrSQL Databse"
 28-03-2025 10:54:02  346  git push
+28-03-2025 11:08:57  341  cd DjangoDocker/
+28-03-2025 11:09:16  342  python manage.py runserver
+28-03-2025 11:10:27  343  pip install -r requirements.txt 
+28-03-2025 11:10:55  344  python manage.py makemigrations
+28-03-2025 11:11:10  345  python manage.py migrate
+28-03-2025 11:11:43  346  python manage.py migrate
+28-03-2025 11:12:45  347  docker compose --build up
+28-03-2025 11:23:11  348  docker compose up
+28-03-2025 11:23:16  338  cd DjangoDocker/
+28-03-2025 11:24:49  339  docker-compose down
+28-03-2025 11:26:34  340  docker-compose up --build
+28-03-2025 11:26:43  339  cd DjangoDocker/
+28-03-2025 11:26:54  340  docker ps
+28-03-2025 11:27:01  341  docker compose down
+28-03-2025 11:27:22  342  docker compose up --build
+28-03-2025 11:29:12  343  docker compose down
+28-03-2025 11:29:25  344  docker compose down
+28-03-2025 11:29:33  345  docker compose up
+28-03-2025 11:31:21  345  docker compose up
+28-03-2025 11:31:27  346  docker-compose up --build
+28-03-2025 11:33:57  347  docker-compose up --build
+28-03-2025 11:34:02  338  cd DjangoDocker/
+28-03-2025 11:34:04  339  docker-compose down
+28-03-2025 11:34:58  340  docker-compose up
+28-03-2025 11:35:05  341  docker-compose down
+28-03-2025 11:35:30  342  docker-compose up
+28-03-2025 11:35:37  343  docker exec -it djangodocker-django-1 bash
+28-03-2025 11:36:20  344  docker-compose up --build
+28-03-2025 11:36:26  345  docker logs djangodocker-django-1
+28-03-2025 11:37:13  346  docker logs djangodocker-django-1
+28-03-2025 11:37:56  347  docker-compose up --build
+28-03-2025 11:43:39  348  docker-compose up --build
+28-03-2025 11:43:51  349  docker compose down
+28-03-2025 11:56:09  339  cd DjangoDocker/
+28-03-2025 11:56:10  340  docker-compose logs db
+28-03-2025 11:57:20  350  docker compose up
+28-03-2025 11:58:29  351  docker compose up --build
+28-03-2025 12:03:06  341  docker exec -it pgadmin /bin/bash
+28-03-2025 12:03:25  342  docker exec -it pgadmin /bin/sh
+28-03-2025 12:03:33  343  docker logs pgadmin
+28-03-2025 12:03:57  344  docker ps
+28-03-2025 12:04:43  345  docker-compose logs
+28-03-2025 12:04:56  346  docker-compose ps
+28-03-2025 12:05:17  347  docker ps -a
+28-03-2025 12:06:05  348  docker-compose logs
+28-03-2025 12:08:07  349  pip install psycopg2
+28-03-2025 12:09:11  350  docker compose down
+28-03-2025 12:11:35  352  docker compose up --build
+28-03-2025 12:11:44  353  docker-compose exec web python manage.py migrate
+28-03-2025 12:12:22  354  docker-compose ps
+28-03-2025 12:13:41  351  docker-compose up --build
+28-03-2025 12:13:44  352  docker-compose down
+28-03-2025 12:14:21  355  docker-compose ps
+28-03-2025 12:14:38  356  docker-compose exec web python manage.py migrate
+28-03-2025 12:14:50  357  docker-compose logs db
+28-03-2025 12:18:46  358  docker compose down
+28-03-2025 12:22:27  359  docker compose up --build
+28-03-2025 12:29:56  353  docker-compose up --build
+28-03-2025 12:30:15  360  docker compose up
+28-03-2025 12:30:21  361  docker compose down
+28-03-2025 12:31:18  362  docker compose up
+28-03-2025 12:31:22  363  docker compose down
+28-03-2025 12:33:08  364  docker compose up

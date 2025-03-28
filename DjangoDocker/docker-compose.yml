@@ -1,50 +1,42 @@
-version: '3.8'
-
+version: "3.8"  # Use version 3.x (remove 'version' if it's causing warnings)
 services:
-  # Django app service
-  django:
-    build:
-      context: .  # Ensure this points to the root of your project
-      dockerfile: Dockerfile  # Ensure you have a Dockerfile for your Django app
-    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
-    volumes:
-      - .:/app  # Bind mount the current directory into the container
-    ports:
-      - "8000:8000"  # Expose port 8000 for Django
-    depends_on:
-      - db  # Depends on the PostgreSQL database
-      
-  # PostgreSQL database
   db:
-    image: postgres:latest
-    container_name: DjangoDocker_db_container
+    image: postgres:13
     environment:
-      POSTGRES_DB: DjangoDocker_DB
+      POSTGRES_DB: mydb
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 123456  # Set your PostgreSQL password
+      POSTGRES_PASSWORD: password
     volumes:
-      - postgres_data:/var/lib/postgresql/data  # Persistent volume for PostgreSQL data
+      - pgdata:/var/lib/postgresql/data
     ports:
-      - "5432:5432"  # Expose PostgreSQL port
-    networks:
-      - DjangoDocker_network  # Use custom network for service communication
+      - "5432:5432"
 
-  # pgAdmin for Database Management
-  pgadmin:
-    image: dpage/pgadmin4
-    container_name: pgadmin_container
-    restart: always
-    environment:
-      PGADMIN_DEFAULT_EMAIL: admin@example.com
-      PGADMIN_DEFAULT_PASSWORD: admin
+  web:
+    build: .
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    volumes:
+      - .:/app
     ports:
-      - "5050:80"  # Expose pgAdmin UI on port 5050
+      - "8000:8000"
     depends_on:
-      - db  # Make sure pgAdmin depends on the PostgreSQL database
+      - db  # Ensure the web service depends on db
+    networks:
+      - default
+
+  pgadmin:
+    image: dpage/pgadmin4:latest  # Official pgAdmin image
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com  # Replace with your preferred email
+      PGADMIN_DEFAULT_PASSWORD: admin  # Replace with your preferred password
+    ports:
+      - "5050:80"  # Exposing pgAdmin web interface on port 5050
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin  # Persistent storage for pgAdmin
+    networks:
+      - default
+    depends_on:
+      - db  # Ensure pgAdmin waits for the db to be ready
 
 volumes:
-  postgres_data:  # Volume to persist PostgreSQL data
-
-networks:
-  DjangoDocker_network:
-    driver: bridge  # Use a bridge network for communication between services
+  pgdata:
+  pgadmin_data:

@@ -85,13 +85,14 @@ WSGI_APPLICATION = 'DjangoDocker.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Gemten_DB',
-        'USER': 'postgres',
-        'PASSWORD': '123456',
-        'HOST': 'db',  # Use the service name defined in docker-compose.yml
-        'PORT': '5432',
+        'NAME': 'mydb',  # Name of your database
+        'USER': 'postgres',  # Username for PostgreSQL
+        'PASSWORD': 'password',  # Password for PostgreSQL
+        'HOST': 'db',  # The hostname of the database service in Docker
+        'PORT': '5432',  # Default PostgreSQL port
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
