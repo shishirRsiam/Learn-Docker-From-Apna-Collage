@@ -155,3 +155,12 @@
 28-03-2025 11:56:00  338  docker-compose logs db
 28-03-2025 12:33:13  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
 28-03-2025 12:33:16  338  git add .
+28-03-2025 12:34:08  339  git commit -am"Django Docker connect to PostgreSQL database and view database from browser"
+28-03-2025 12:34:15  340  git push
+28-03-2025 12:36:58  341  docker compose down
+28-03-2025 12:37:11  342  docker compose up
+09-04-2025 22:38:44  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+09-04-2025 22:38:44  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+09-04-2025 22:38:45  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+09-04-2025 22:41:35  338  it add .
+09-04-2025 22:41:40  339  git add .

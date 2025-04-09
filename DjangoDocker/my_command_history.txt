@@ -157,3 +157,5 @@
 28-03-2025 12:31:18  362  docker compose up
 28-03-2025 12:31:22  363  docker compose down
 28-03-2025 12:33:08  364  docker compose up
+28-03-2025 12:37:16  343  cd DjangoDocker/
+28-03-2025 12:37:22  344  docker compose down
